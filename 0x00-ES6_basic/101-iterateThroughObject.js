@@ -1,3 +1,8 @@
-export default function iterateThroughObject(reportWithIterator) {
-  return
- }
+export default function createIteratorObject(report) {
+  let result = [];
+  for (const value of Object.values(report.allEmployees)) {
+    result = [...result, ...value];
+  }
+
+  return result;
+}
