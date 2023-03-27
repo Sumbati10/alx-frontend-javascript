@@ -1,4 +1,5 @@
-export default function createInt8TypedArray(length, position, value) {
+M
+rt default function createInt8TypedArray(length, position, value) {
   if (position >= length) {
     throw new Error('Position outside range');
   }
